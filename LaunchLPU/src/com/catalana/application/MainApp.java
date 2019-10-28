@@ -8,7 +8,7 @@ public class MainApp {
 
 	public static void main(String[] args) throws ExceptionLPU {
 
-		System.out.println(args[0]);
+		//System.out.println(args[0]);
 		if(args[0].equals("copyFile")) {
 			FileMoves.execute("old");
 		}else {
@@ -17,5 +17,4 @@ public class MainApp {
 		}
 			
 	}
-
 }

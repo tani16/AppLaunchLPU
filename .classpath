@@ -4,5 +4,6 @@
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="LaunchLPU/src"/>
 	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/UtilsLPU"/>
+	<classpathentry kind="src" path="/AppLoadLPU"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

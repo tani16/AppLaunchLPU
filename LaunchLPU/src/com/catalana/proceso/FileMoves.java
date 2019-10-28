@@ -66,6 +66,13 @@ public class FileMoves {
 
 		file = FileSystems.getDefault().getPath(Constantes.FILE_RAWDATA);
 		TratamientoFicheros.deteleFile(file);
+		
+		file = FileSystems.getDefault().getPath(Constantes.FILE_RESULT_AFTER);
+		TratamientoFicheros.deteleFile(file);
+		
+		file = FileSystems.getDefault().getPath(Constantes.FILE_RESULT_BEFORE);
+		TratamientoFicheros.deteleFile(file);
+		
 
 	}
 	

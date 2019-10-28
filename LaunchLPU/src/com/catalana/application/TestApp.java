@@ -12,8 +12,17 @@ public class TestApp {
 
 	public static void main(String[] args) throws ExceptionLPU {
 		// TODO Auto-generated method stub
-		CompareFiles.execute();
+		//CompareFiles.execute();
 		
+		//FileMoves.execute("old");
+		
+		//System.out.println(args[0]); 
+		//if(args[0].equals("copyFile")) {
+			//FileMoves.execute("old");
+		//}else {
+			//FileMoves.execute("new");
+			//CompareFiles.execute();
+		//}
 		
 	}
 

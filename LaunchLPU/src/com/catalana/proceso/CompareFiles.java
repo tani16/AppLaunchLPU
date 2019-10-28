@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
 
+import com.catalana.method.LoadMethods;
 import com.catalana.utils.Constantes;
 import com.catalana.utils.ExceptionLPU;
 import com.catalana.utils.TratamientoFicheros;
@@ -35,7 +36,7 @@ public class CompareFiles {
 		for (int i = 0; i < displaysAfter.size(); i++) {
 			if(!displaysAfter.get(i).equals(displaysBefore.get(i))) {
 				result = false;
-				//TratamientoFicheros.addDisplays(displaysAfter.get(i), displaysBefore.get(i));
+				LoadMethods.addDisplayFail(displaysAfter.get(i), displaysBefore.get(i));
 			}
 		}
 		
