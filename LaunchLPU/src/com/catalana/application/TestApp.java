@@ -23,6 +23,7 @@ public class TestApp {
 			//FileMoves.execute("new");
 			//CompareFiles.execute();
 		//}
+		FileMoves.execute("old");
 		
 	}
 

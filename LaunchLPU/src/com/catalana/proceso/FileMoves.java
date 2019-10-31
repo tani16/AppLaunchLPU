@@ -16,10 +16,11 @@ public class FileMoves {
 
 	public static void execute(String tipo) throws ExceptionLPU {
 		
+		//Obtenemos el módulo a probar
+		ArrayList<String> rawData = TratamientoFicheros.getArrayFromFile(Constantes.FILE_RAWDATA);
+		String modulo = getModulo(rawData);
+		
 		if("old".equals(tipo)) {
-			//Obtenemos el módulo a probar
-			ArrayList<String> rawData = TratamientoFicheros.getArrayFromFile(Constantes.FILE_RAWDATA);
-			String modulo = getModulo(rawData);
 			
 			//movemos la dll modificada para su próxima ejecución
 			TratamientoFicheros.moveDll(modulo, "After");
@@ -30,6 +31,9 @@ public class FileMoves {
 		
 		//Movemos el archivo SYSOUT a la carpeta temporal
 		moveFile(tipo);
+		
+		//movemos la dll modificada para su próxima ejecución
+		TratamientoFicheros.moveDll(modulo, "Before");
 	}
 	
 
@@ -64,8 +68,8 @@ public class FileMoves {
 		file = FileSystems.getDefault().getPath(Constantes.FILE_TEST_BEFORE);
 		TratamientoFicheros.deteleFile(file);
 
-		file = FileSystems.getDefault().getPath(Constantes.FILE_RAWDATA);
-		TratamientoFicheros.deteleFile(file);
+		//file = FileSystems.getDefault().getPath(Constantes.FILE_RAWDATA);
+		//TratamientoFicheros.deteleFile(file);
 		
 		file = FileSystems.getDefault().getPath(Constantes.FILE_RESULT_AFTER);
 		TratamientoFicheros.deteleFile(file);

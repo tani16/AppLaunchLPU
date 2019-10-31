@@ -18,9 +18,9 @@ public class CompareFiles {
 	public static void execute() throws ExceptionLPU {
 		
 		if(startCheck()) {
-			JOptionPane.showMessageDialog(null,"Bien","Las Pruebas Unitarias han finalizado correctamente",JOptionPane.INFORMATION_MESSAGE); 
+			JOptionPane.showMessageDialog(null,"Las Pruebas Unitarias han finalizado correctamente","Bien",JOptionPane.INFORMATION_MESSAGE); 
 		}else {
-			JOptionPane.showMessageDialog(null,"Error","Resultado de las Pruebas Unitarias: FAIL",JOptionPane.ERROR_MESSAGE); 
+			JOptionPane.showMessageDialog(null,"Resultado de las Pruebas Unitarias: FAIL","Error",JOptionPane.ERROR_MESSAGE); 
 			TratamientoFicheros.openNotepad();
 		}
 			
