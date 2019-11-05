@@ -55,6 +55,7 @@ public class FileMoves {
 		}
 		
 		TratamientoFicheros.moveFile(origenPath, destinoPath);
+		TratamientoFicheros.deteleFile(origenPath);
 			
 	}
 
