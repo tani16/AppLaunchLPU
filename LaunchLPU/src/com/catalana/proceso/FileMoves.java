@@ -27,13 +27,16 @@ public class FileMoves {
 			
 			//Limpiamos la carpeta temporal
 			deleteTemporalFiles();
+		}else {
+			
+			//movemos la dll origen para su próxima ejecución
+			TratamientoFicheros.moveDll(modulo, "Before");
 		}
 		
 		//Movemos el archivo SYSOUT a la carpeta temporal
 		moveFile(tipo);
 		
-		//movemos la dll modificada para su próxima ejecución
-		TratamientoFicheros.moveDll(modulo, "Before");
+		
 	}
 	
 
